@@ -14,3 +14,19 @@ BASE_URL = 'http://dev.virtualearth.net/REST/v%s/' % version
 self.BASE_URL = BASE_URL
 self.routes_url = BASE_URL + 'Routes/Walking'
 ```
+Como no scrip do Geocoder, é necessário inserir a chave da API Bing.
+
+```python
+bing = Bing('API KEY')
+```
+
+## ONE_ROUTE-GOOGLE.py
+
+O funcionamento é semelhante ao anterior mas ao invés de utilizar a API da Bing, utiliza a API da Google. Ainda não está completo, ainda são necessários alguns ajustes. Utiliza a biblioteca googlemaps.
+
+```python
+import googlemaps
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
